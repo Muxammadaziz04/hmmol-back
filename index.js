@@ -643,5 +643,5 @@ app.get('/api/category', (req,res)=> {
     res.send(categories)
 })
 
-app.listen(3001);
+app.listen(process.env.PORT || 3001);
 console.log('Express started on port 3001');
